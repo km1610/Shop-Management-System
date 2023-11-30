@@ -21,7 +21,7 @@ def connection():
 
 connection()     
 window=Tk()
-window.title("TechVidvan Shop Management Project")
+window.title("Shop Management Project")
 tabs = ttk.Notebook(window) 
 root= ttk.Frame(tabs)
 root2=ttk.Frame(tabs)
@@ -42,7 +42,7 @@ def GenerateBill():
         messagebox.showerror("Error","No product purchased")
     else:
         billarea.delete('1.0',END)
-        billarea.insert(END,"\t|| TechVidvan Shop Management Project ||")
+        billarea.insert(END,"\t|| Shop Management Project ||")
         billarea.insert(END,"\n_________________________________________\n")
         billarea.insert(END,"\nDate\t Products\tPrice\t   QTY\t Total")
         billarea.insert(END,"\n==========================================")
